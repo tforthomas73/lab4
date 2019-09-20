@@ -6,9 +6,10 @@
     </head>
     <body>
         <h1>Volunteer Form</h1>
-        <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post"></form>
+        <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+        <h4>My Info</h4>
         <fieldset>
-        <legend>My Info</legend>
+        <legend></legend>
         <p><strong>First Name:</strong><input type="text" class="noborder" name="first_name_field"></p>
         <p><strong>Last Name:</strong><input type="text" class="noborder" name="first_name_field"></p>
         <p><strong>Phone Number:</strong><input type="text" class="noborder" name="first_name_field"></p>
@@ -22,21 +23,24 @@
                 <option value="35 - 44"> 35 - 34 </option>
                 <option value="45 - 54"> 45 - 54 </option>
                 <option value="55 - 64"> 55 - 64 </option>
-                <option value="65 and over"> 65 &amp; Over </option>
+                <option value="65 and over"> 65 and Over </option>
             </select>
         </fieldset>
         <h4>My Availability</h4>
-        <p><strong>Days Available:</strong></p>
-        <p>Sunday</p>
-        <p>Monday</p>
-        <p>Tuesday</p>
-        <p>Wednesday</p>
-        <p>Thursday</p>
-        <p>Friday</p>
-        <p>Saturday</p>
-
+        <fieldset>
+            <legend></legend>
+                <p><strong>Days Available:</strong></p>
+                <input type="checkbox" name="available_field[]" value="Sunday"> Sunday
+                <input type="checkbox" name="available_field[]" value="Monday"> Monday
+                <input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday
+                <input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday
+                <input type="checkbox" name="available_field[]" value="Thursday"> Thursday
+                <input type="checkbox" name="available_field[]" value="Friday"> Friday
+                <input type="checkbox" name="available_field[]" value="Saturday"> Saturday
         <p>Any Comments?</p>
-        </div>
-        <p>Send Me</p>
+        <textarea name="comments_field" id="comment" class="noborder" rows="8" cols="50"></textarea>
+        </fieldset>
+        <input type="submit" value="Send Me" id="sendme">
+        </form>
     </body>
 </html>
