@@ -3,20 +3,16 @@
     <head>
         <meta charset="utf-8"/>
         <title>ITMD-361 Lab 4 Form Processing Script</title>
-            <style>
-                .box {
-                    border: 1px solid #444;
-                    background-color: #ccc;
-                    margin: 20px 20px;
-                    padding: 5px 20 px;
-                }
-            </style>
     </head>
     <body>
         <h1>Volunteer Form</h1>
-        <div class="box">
+        <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post"></form>
+        <fieldset>
         <h4>My Info</h4>
-        <p><strong>First Name:</strong>___________________________</p>
+        <legend>Personal Info</legend>
+        <p><strong>First Name:</strong></p>
+        <input type="text" class="noborder" name="first_name_field">
+        <br><br>
         <p><strong>Last Name:</strong>____________________________</p>
         <p><strong>Phone Number:</strong>_________________________</p>
         <p><strong>Email Address:</strong>________________________</p>
@@ -28,8 +24,7 @@
                 45 - 54
                 55 - 64
                 65 and over</p>
-        </div>
-        <div class="box">
+        </fieldset>
         <h4>My Availability</h4>
         <p><strong>Days Available:</strong></p>
         <p>Sunday</p>
